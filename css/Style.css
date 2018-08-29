@@ -1,0 +1,445 @@
+/*Inicio hoja de estilos*/
+/*.........................................................................*/
+
+/*Estilos en general en el cuerpo del docuemnto*/
+
+.cinema-body{ /*Clase de la etiqueta body*/
+	background-image:url(../Img/Fondo.jpg); /*Imagen de fondo*/
+	background-repeat:no-repeat; /*Para que la imagen no se repita*/
+	background-color:rgba(178, 194, 196,0.9); 
+	background-attachment: fixed; /*Para que el fondo quede fijo*/
+	background-position: center 0; /*Centrar la imagen,el segundo valor es el top*/
+	width: 95%;
+	margin-left: 30px;	
+}
+/*...........................................................................*/
+
+/*Inicio estilos de la barra de navegacion*/
+
+.navegacion-padre{/*Contenedor de la barra de navegacion*/
+	background-color:rgba(10, 11, 24,0.9);
+	border-radius:0 0 20px 20px;
+	height:60%;
+}
+
+.menu { /*Contenedor de los enlaces de la barra de navegacion*/
+	margin-top: 4%;
+
+}
+
+.menu a{ /*Enlaces del menu de la barra de navegacion*/
+	font-weight:bolder;
+	color:black;
+	padding: 6px;
+	margin-left:15px;
+
+}
+
+.menu a:hover{/*Estilos cuando pasan el cursor*/
+	animation: animacion-menu 1s;	
+}
+
+@keyframes animacion-menu{
+	30%{
+		transform: rotate(5deg);
+	}
+	40%{
+		background-color: grey;
+	}
+
+	80%{		
+		border:2px solid yellow;		
+	}
+
+	100%{
+		position: relative;
+	}
+}
+
+
+.logo-img{ /*Logo en la barra de navegacion superior*/
+	width: 20%;
+	border-radius: 50px;
+	border:3px solid #323F74;
+	margin: 4px;
+	animation:animacion-logo-img 2s;
+}
+
+
+@keyframes animacion-logo-img{ /*Animacion para el logo*/
+	50%{
+		transform: rotate(15deg);
+	}
+	100%{
+		position: relative;
+	}
+}
+
+/*.............................................................................*/
+
+/*Inicio de estilos del primer contenedor*/
+.contenedor1{/*Primer Contenedor*/
+	background-image: url(../Img/cine.jpg);
+	background-repeat: no-repeat;
+	width: 100%;
+	background-color:black;
+	padding: 2%;
+	margin-left: 1%;
+	font-family: "roboto slab";
+}
+
+.contenedor-hijo{
+	background-color:rgba(181, 191, 204,0.3); 
+	border-radius: 12px 12px 12px 12px;
+	background-attachment: fixed;
+	border:2px solid black;
+}
+
+.titulo_contenedor1{
+	text-shadow:2px 2px red;
+	font-size: 50px;
+	color:white;
+}
+
+.jumbotron-img{ /*Logo, del bienvenidos a*/
+	width: 30%;
+	border-radius: 50px;
+	padding: 2px;
+	border:3px solid #323F74;
+	margin: 20px;
+	
+}
+
+.jumbotron-img:hover{
+	animation:animacion-logo-img 2s;
+}
+
+
+.welcome-title{ /*Estilos del titulo del jumbotron*/
+	color: white;
+	margin-right: 10px;
+}
+
+.jumbotron-text{ /*Estilos del texto del jumbotron*/
+	color: white;
+	font-size: 16px;
+	margin: 20px;
+	background-color:rgba(67, 117, 167,0.6); 
+	border-radius: 10px;
+}
+
+.redes-sociales{/*Estilo en el contenedor de los iconos de las redes sociales*/
+	margin: 20px;
+	background-color:rgba(149, 181, 228,0.2);
+	width: 50%;
+	margin-left: 20%;
+	border-radius: 25px;
+	padding: 2px;
+}
+
+.redes-sociales:hover{
+	background-color: rgba(101, 109, 121,0.2);
+	box-shadow: 2px 1px black;
+}
+
+.img-social{/*Tamaños en los iconos de las redes sociales*/
+	width: 40px;
+	height: 40px;
+}
+
+.titulo-text{/*Titulo a peliculas en cartelera*/
+	font-size: 18px;
+	font-weight:bolder; /*Negrilla a la letra*/
+	color: white;
+	padding: 10px;
+	background-color: grey;
+}
+
+/*........................................................................*/
+/*Estilos del contenedor de la derecha, seccion de comida*/
+
+
+.contenedor-hijo-comida{/*Estilos del contenedor de la derecha*/
+	background-color: rgba(54, 106, 147  ,0.8);
+	border-radius: 10px;
+	padding-bottom: 2%;
+	border:2px solid black;
+}
+
+.contenedor-hijo-comida-titulo-padre{ /*Estilos del titulo padre del contenedor derecha*/
+	background-color:rgba(40, 102, 150,0.98);
+	border-radius: 10px; 
+	padding: 1%;
+	width: 80%;
+	margin-left: 13%;
+	color: white;
+}
+
+.contenedor-hijo-comida-titulo-hijo{/**Estilos del titulo hijo del contenedor derecha*/
+	color: white;
+	font-size:20px;
+}
+
+.titulo-comida{
+	color: white;
+	font-size: 20px;
+	text-decoration-line:underline;
+	background-color: rgba(121, 133, 142,0.4);
+	margin: 5px;
+	width: 90%;
+	border-radius: 10px;
+	padding:3px;
+}
+
+.contenedor-img-padre{/*Contenedor de las imagenes del contenedor padre de la derecha*/
+	border-radius: 5px;
+	border:6px dashed #E3E330;
+	background-color:rgba(150, 192, 225,0.4); 
+	min-height:250px;
+	margin:3px; 
+	width: 90%;
+}
+
+.contenedor-img-comida{ /*Estilos de las imagenes por defecto del contenedor de la derecha*/
+	width: 60%;
+	border-radius:5px; 
+}
+
+.contenedor-img-comida2{/*Tamaño de la segunda imagen del contenedor de la derecha*/
+	width: 75%;
+}
+
+.contenedor-img-padre:hover{ /*Efectos en las imagenes del contenedor derecha*/
+	background-color: rgba(150, 192, 225,0.98);	
+	width: 93%;
+}
+
+/*...........................................................................*/
+
+/*Inicio de contenedor peliculas en cartelera*/
+
+.movies-row{/*Fondo del contenedor de las peliculas*/
+	background-color:rgba(219, 222, 232,0.8); 
+}
+.contenedor2-titulo{ /*Contenedor de la barra de peliculas-estrenos*/
+	background-color:rgba(231, 64, 64,0.9);
+	padding: 25px;
+	border:3px dashed yellow;
+	border-radius: 0px 0px 10px 10px;
+}
+
+.barra-peliculas{ /*Barra de peliculas-Cartelera/peliculas-estreno/peliculas-calificadas*/
+	font-weight: bolder;
+	color: black;
+	font-size: 25px;
+}
+
+.movie-title{ /*Estilos a cada fila dentro de cada columna*/
+	color: black;
+	font-weight: bolder; /*Estilo de fuente negrila*/
+}
+
+.img-movies{/*Estilos y tamaños de las imagenes*/
+	height: 260px;
+	padding: 6px;
+	margin: 22px;
+	border:4px dashed black;
+}
+
+.img-movies:hover{
+	box-shadow: 2px 4px #0F56BD;
+	background:black;
+	border-radius:20px; 
+	animation: animacion-imagenes-movies 4s;
+}
+
+@keyframes animacion-imagenes-movies{ /*animacion en el pseudo clase de :hover de las imagenes*/
+	50%{
+	  transform: translate(5px,2px);
+	  border:6px solid #0249B0;
+	}
+	100%{
+		transform: translate(0px,0px);
+		border:6px solid #023783;
+	}
+}
+ /*Finalizacion del segundo contenedor de las peliculas*/
+ 
+ /*............................................................................*/
+ 
+ /*Iniciacion del tercer contenedor- pelicualas estreno/peliculas mejores calificadas*/
+
+.contenedor3-titulo1{
+	background-color: rgba(27, 124, 24,0.4);
+	border-radius: 0px 0px 10px 10px;
+	border:3px solid black;
+	margin-bottom: 2px; 
+}
+
+.contenedor3-titulo1:hover{ /*Evento en contenedor peliculas proximos extrenos*/
+	background-color:#1B7C18;
+}
+
+.contenedor3-titulo2{
+	background-color: rgba(230, 114, 17,0.7);
+	border-radius: 0px 0px 10px 10px; ;
+	border:3px solid black;
+	margin-bottom: 2px;
+}
+
+.contenedor3-titulo2:hover{
+	background-color: #E67211;
+}
+
+.img-movies2{ /*Imagenes de proximos estrenos*/
+	height: 260px;
+	padding: 6px;
+	margin: 22px;
+	border:4px dashed white;
+}
+
+
+.movies-row-2{ /*Estilos del contenedor proximos estrenos*/
+	background-color: rgba(11, 93, 246,0.4);
+	border:2px solid black; 
+}
+.Estreno-titulo{ /*Contenedores de los titulos de las peliculas de estreno y mejor calificacio*/
+	background-color:rgba(91, 86, 83,0.5); 
+	border-radius: 5px;
+	margin-bottom: 5px;
+	border:2px solid black; 
+}
+
+.movie-title2{/*Titulo de las peliculas del respectivo contenedor*/
+	text-align: center;
+	padding-top: 2px;
+	font-size: 18px;
+	color: white;
+	font-weight: bolder;
+}
+
+/*Estilos pelicula mejor calificada*/
+
+.borde{  /*Borde, del contenedor de pelicula con mejor calificacion*/
+	border-left:1px dashed white;
+}
+
+.contenedor3-contenedor-pelicula{
+	width: 100%;
+}
+.img-calificacion{ 
+	height: 260px;
+	padding: 6px;
+	margin: 22px;
+	border:5px dashed #E2F039;
+}
+
+/*.....................................................................*/
+
+/*Contenedor pie de pagina*/
+
+.container-servicio{ /*Estilos del pie de pagina*/
+	background-color:rgba(54, 59, 63,0.6); 
+}
+
+.contenedor-title-servicios{ /*Contendor-barra-servicios*/
+	color: black;
+	background-color: rgba(120, 123, 124,0.2);
+}
+.contenedor-title-servicios:hover{	/*Efecto en contenedor servicios*/
+	background-color: rgba(120, 123, 124,0.8);
+	border-radius: 15px;
+}
+
+.contenedor-title-servicios p{/*Estilos en etiqueta de texto*/
+	font-weight: bolder;
+}
+
+.services-text{ /*Estilo de tipografia del pie de pagina*/
+	font-size: 20px;
+	color: white;
+}
+
+.contenedor-servicios-descripcion{ /*Contenedor servicios descripcion*/
+	margin-top: 5%;
+	background-color: rgba(80, 128, 160,0.5);
+	border-radius: 5px;
+	padding: 20px;
+	text-align: center;
+	border:2px dashed grey;
+}
+
+.contendor-servicios-contacto{/*Contenedor servicios-contacto*/
+	background-color: rgba(53, 138, 194,0.6);
+	margin-top: 12px;
+	border-radius:4px; 
+	margin-left: 8%;
+}
+
+.contenedor-t-esperamos{/*contenedor titulo te esperamos*/
+	background-color: red;
+	color: yellow;
+	border-radius:30px; 
+	margin-top: 10px;
+	border:6px dashed grey;
+	width: 80%;
+}
+
+.contenedor-t-esperamos p{/*Etiqueta html de texto te esperamos*/
+	color: yellow;
+	font-size: 250%;
+}
+
+
+.encabezado-final{ /*Titulo "Te esperamos del pie de pagina"*/
+	text-align:center;
+	color:white;
+}
+
+.contenedor-padre-registro{
+	background-color:rgba(30, 30, 30,0.9); 
+}
+
+.barra-registro{ /*barra del contenedor de pie de pagina registro*/
+	background-color: rgba(32, 40, 214,0.7);
+	border-radius:5px;
+	text-align: center;
+}
+
+.user-data{ /*Estilos de la etiqueta legend del formulario del contenedor registro*/
+	margin:10px;
+	font-size:18px;
+	color: white;
+}
+
+.input-element{ /*Estilos en las cajas de texto del contenedor de registro*/
+	width: 100%;
+	height: 28px;
+	padding:10px;
+	color:white;
+	background-color:rgba(250, 245, 245,0.4);
+	border-radius:4px;
+	margin: 5px;
+}
+
+.label-class{/*Estilos de los labels de los correspondientes input*/
+	color:white;
+	font-size:13px;
+	margin-right:10px;
+}
+
+.btn-save{ /*Estilos del boton*/
+	width:40%;
+	color: white;
+	margin: 4px;
+}
+
+
+
+
+
+
+
+
+
+
